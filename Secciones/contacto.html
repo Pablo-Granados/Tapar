@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../Imagenes/Logo-Tapar00.jpg">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoHome">
+            <a href="../index.html">
+                <img class="logoHome_Img" src="../Imagenes/TaparNegro.png" alt="Logo Tapar Color Negro">
+            </a>
+        </div>
+        <ul class="categorias">
+            <li>
+                <a class="Secciones" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a class="Secciones" href="./productos.html">Productos</a>
+            </li>
+            <li>
+                <a class="Secciones" href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a class="Secciones" href="./historia.html">Historia</a>
+            </li>
+        </ul>
+    </header>
+        <h2 class="contactoFormulario">CONTACTO</h2>
+    <section>
+        <article class="formulario">
+            <form action="#">
+                <label for="Name">Nombre y Apellido</label>
+                <input type="text" placeholder="Nombre y Apellido"><br>
+                <label for="email">Correo electronico:
+                    <input type="email" placeholder="aaaaa@gmail.com" name="email">
+                </label><br>
+                <label for="Edad">Edad</label>
+                    <input type="number" placeholder="Edad"><br>
+                <label for="Observaciones"> Observaciones:
+                    <textarea placeholder="Observaciones"></textarea>
+                </label>
+                
+                <div class="selector">
+                    <h3 class="elegiUnLado">
+                        <p>Elegí un lado</p>
+                    </h3>
+                    <div class="eleccionLogos">
+                        <div class="eleccionColor">
+                            <img src="../Imagenes/Logo Tapar Blanco.svg" alt="">
+                            <input type="radio" name="lado" value="izquierda">
+                            <p class="Camisetas">Logo color</p>
+                        </div>
+                        <div class="eleccionBlanco">
+                            <img src="../Imagenes/Logo Tapar Blanco 2.svg" alt="">
+                            <input type="radio" name="lado" value="derecha">
+                            <p class="Camisetas">Logo blanco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="colorTapar">
+                    <p>¿Que color de tela te gusta mas?</p>
+                    <select name="Nombre" id="Nombre">
+                        <option value="Gris">Gris</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Natural">Natural</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Toda la información actualizada con una sola tilde</p>
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar datos">
+            </form>
+        </article>
+    </section>
+
+
+    <footer class="redes">
+        <a class="redesSociales" href="https://www.instagram.com/tapar.blackout/?hl=es-la">
+            <img src="../Imagenes/icons8-instagram.svg" alt="Logo de Instagram">
+        </a>
+    </footer>
+</body>
+
+</html>
