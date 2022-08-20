@@ -22,6 +22,16 @@ body{
     letter-spacing: 2px;
 }
 
+.anim{
+    transition: padding 0.5s;
+}
+
+.anim:hover{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #252525;
+}
+
+
 /* --------------MAIN INICIO--------------- */
 
 main{
@@ -132,6 +142,15 @@ main{
     margin: 1rem;
 }
 
+.terycon{
+    text-align: start;
+}
+
+.boton{
+    text-align: end;
+}
+
+
 /* -----NOSOTROS------- */
 
 .nosotros{
@@ -139,7 +158,7 @@ main{
     text-align: center;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
