@@ -17,36 +17,31 @@ body{
 
 }
 
-
 .nav-link{
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-
 /* --------------MAIN INICIO--------------- */
 
 main{
     width: 100%;
-    height: 95vh;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio{
+    width: 95%;
+    align-self: center;
 }
 
 .row{
-    margin-top: 5rem;
+    margin-top: 2rem;
+    text-align: center;
     align-items: center;
 }
 
-.Living{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 1rem;
-    grid-template-areas: 
-    "tituloT"
-    "parrafoT"
-    "fondo";
-}
 
 .taparInicio{
     margin: 2rem 1rem 2rem 1rem;
@@ -111,15 +106,15 @@ main{
 
 /* ---------footer-------- */
 
-footer{
+.redes{
     height: 10vh;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* vertical-align: bottom; */
+    vertical-align: bottom;
 }
-.redesfot{
+.redesSociales{
     display: flex;
     align-self: flex-end;
 }
@@ -127,57 +122,14 @@ footer{
 
 /* --------Contacto------------ */
 
-.contactoFormulario{
-    height: 5vh;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: xx-large;
-    text-align: center;
-    color: whitesmoke;
-    font-weight: bolder;
-    letter-spacing: 0.5rem;
-}
-
-.selector{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: stretch;
-    grid-template-areas: 
-    "lado lado"
-    "logo logo"
-}
-
-.elegiUnLado{
-    grid-area: lado;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.eleccionColor{
-    grid-area: Color;
-    width: 50vw;
-    text-align: center;
-}
-
-.eleccionBlanco{
-    grid-area: Blanco;
-    width: 50vw;
-    text-align: center;
-}
-
-.eleccionLogos{
+.continuar{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    grid-area: logo;
+    justify-content: end;
 }
 
 .formulario{
     color: whitesmoke;
     margin: 1rem;
-    height: 75vh;
 }
 
 /* -----NOSOTROS------- */
@@ -214,7 +166,8 @@ footer{
 
 .contenedorProductos{
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "uno"
     "dos"
@@ -373,7 +326,7 @@ main{
    height: 100%; 
 }
 footer{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 
 }
 /* ------ inicio tablet */
@@ -413,13 +366,11 @@ footer{
 
 .contenedorProductos{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "uno"
-    "dos"
-    "tres"
-    "cuatro";
+    "uno dos"
+    "tres cuatro";
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -436,18 +387,15 @@ footer{
 
 @media screen and (min-width: 1024px){
 
-   
-
-
 /* ------productos desktop------- */
 
 .contenedorProductos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "uno dos"
-    "tres cuatro";
+    "uno dos tres"
+    "cuatro";
     gap: 1rem;
     margin-top: 2rem;
 }
