@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #252525;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.anim {
+  transition: padding 0.5s;
+}
+.anim:hover {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #252525;
+}
+
+main {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .inicio {
+  width: 95%;
+  align-self: center;
+}
+main .inicio .row {
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+}
+main .inicio .row .parrafoTapar {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: x-large;
+}
+main .inicio .row .parrafoTapar .colorBlanco {
+  color: white;
+  text-transform: uppercase;
+}
+main .inicio .row .parrafoTapar .colorBeige {
+  color: beige;
+  text-transform: uppercase;
+}
+main .inicio .row .parrafoTapar .colorGris {
+  color: grey;
+  text-transform: uppercase;
+}
+main .inicio .row .parrafoTapar .colorNatural {
+  color: wheat;
+  text-transform: uppercase;
+}
+
+/* ---------footer-------- */
+.redes {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.redesSociales {
+  display: flex;
+  align-self: flex-end;
+}
+
+/* --------Contacto------------ */
+.continuar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formulario {
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+.terycon {
+  text-align: start;
+}
+
+.boton {
+  text-align: end;
+}
+
+/* -----NOSOTROS------- */
+.nosotros {
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoTapar {
+  display: flex;
+  align-items: center;
+  height: 65vh;
+  width: 100vw;
+  max-width: auto;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.videoTapar video {
+  max-width: 100%;
+  max-height: 65vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ------PRODUCTOS------------ */
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  gap: 1rem;
+}
+
+.product {
+  width: 100vw;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ventasUno {
+  grid-area: uno;
+  width: 90%;
+}
+
+.ventasDos {
+  grid-area: dos;
+  width: 90%;
+}
+
+.ventasTres {
+  grid-area: tres;
+  width: 90%;
+}
+
+.ventasCuatro {
+  grid-area: cuatro;
+  width: 90%;
+}
+
+/* ------historia------ */
+div h1 {
+  color: whitesmoke;
+  width: 95vw;
+  text-align: center;
+}
+
+.Gusanito {
+  background: #005232;
+  border: 4px solid green;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 0px;
+  margin-top: 50vh;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-animation: MoveOn 50s infinite, Worm 2s infinite;
+          animation: MoveOn 50s infinite, Worm 2s infinite;
+}
+
+.ojos {
+  width: 12px;
+  height: 14px;
+  position: relative;
+  background: #000;
+  top: 8px;
+  left: 4px;
+  border-radius: 25px;
+}
+
+.iris {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  background: #fff;
+  top: 2px;
+  left: 6px;
+  border-radius: 25px;
+}
+
+.pupila {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  background: #fff;
+  top: 4px;
+  left: -6px;
+  border-radius: 25px;
+}
+
+.boca {
+  width: 4.5px;
+  height: 2.5px;
+  background: #000;
+  position: absolute;
+  border-radius: 9px;
+  margin-top: 8px;
+  right: 9px;
+}
+
+.sonrisa {
+  width: 10px;
+  height: 8px;
+  background: #e6008c;
+  position: absolute;
+  border-radius: 9px;
+  margin-top: 8px;
+  left: 2px;
+  -webkit-animation: TwoBlushes 2s infinite;
+          animation: TwoBlushes 2s infinite;
+}
+
+@-webkit-keyframes MoveOn {
+  0% {
+    margin-left: 100%;
+  }
+  48% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+    margin-left: 0%;
+  }
+  98% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    margin-left: 100%;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes MoveOn {
+  0% {
+    margin-left: 100%;
+  }
+  48% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+    margin-left: 0%;
+  }
+  98% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    margin-left: 100%;
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes Worm {
+  0% {
+    background: #2cb882;
+    width: 40px;
+  }
+  50% {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    background: #0e9662;
+    width: 70px;
+  }
+  100% {
+    background: #6ef1bf;
+    width: 40px;
+  }
+}
+@keyframes Worm {
+  0% {
+    background: #2cb882;
+    width: 40px;
+  }
+  50% {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    background: #0e9662;
+    width: 70px;
+  }
+  100% {
+    background: #6ef1bf;
+    width: 40px;
+  }
+}
+/* ----------tablet ------------------*/
+@media screen and (min-width: 600px) {
+  main {
+    height: 100%;
+  }
+  /* ------ inicio tablet */
+  .taparInicio {
+    margin: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .tituloTapar {
+    color: whitesmoke;
+    letter-spacing: 20px;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    grid-area: tituloT;
+  }
+  .parrafoTapar {
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: xx-large;
+    grid-area: parrafoT;
+  }
+  /* ----nosotros tablet----- */
+  .nosotros {
+    font-size: 4vh;
+  }
+  /* ----productos tablet----- */
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos" "tres cuatro";
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .product {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* ------productos desktop------- */
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos tres" "cuatro";
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .product {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */

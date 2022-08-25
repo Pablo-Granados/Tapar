@@ -1,0 +1,45 @@
+main{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .inicio{
+        width: 95%;
+        align-self: center;
+
+        .row{
+            margin-top: 2rem;
+            text-align: center;
+            align-items: center;
+
+            .parrafoTapar{
+                margin-bottom: 2rem;
+                color: whitesmoke;
+                font-weight: 200;
+                font-size: x-large;
+            
+                .colorBlanco{
+                    color: white;
+                    text-transform: uppercase;
+                }
+                
+                .colorBeige{
+                    color: beige;
+                    text-transform: uppercase;
+                }
+                
+                .colorGris{
+                    color: grey;
+                    text-transform: uppercase;
+                }
+                
+                .colorNatural{
+                    color: wheat;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

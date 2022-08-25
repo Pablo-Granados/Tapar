@@ -1,0 +1,18 @@
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: 800;
+
+}
+
+.nav-link{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.anim{
+    transition: padding 0.5s;
+    &:hover{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #252525;
+}
+}
