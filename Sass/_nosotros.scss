@@ -1,0 +1,62 @@
+.nosotros{
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteinerNos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "tres"
+    "cuatro";
+    gap: 1rem;
+}
+
+.casas{
+    @extend .product;
+}
+.videoTapar{
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    width: 100vw;
+    max-width: auto;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.videoTapar video{
+    max-width: 100%;
+    max-height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (min-width: 600px){
+    .nosotros{
+        font-size: 4vh;
+    }
+    
+    .conteinerNos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "uno dos"
+        "tres cuatro";
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .videoTapar{
+        margin-top: 2rem;
+    }
+    }

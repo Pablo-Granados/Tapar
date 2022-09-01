@@ -1,22 +1,8 @@
 @import "generales";
 @import "header";
 @import "inicio";
-
-/* ---------footer-------- */
-
-.redes{
-    height: 10vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: bottom;
-}
-.redesSociales{
-    display: flex;
-    align-self: flex-end;
-}
-
+@import "footer";
+@import "nosotros";
 
 /* --------Contacto------------ */
 
@@ -38,36 +24,6 @@
     text-align: end;
 }
 
-
-/* -----NOSOTROS------- */
-
-.nosotros{
-    color: whitesmoke;
-    text-align: center;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.videoTapar{
-    display: flex;
-    align-items: center;
-    height: 65vh;
-    width: 100vw;
-    max-width: auto;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-}
-
-.videoTapar video{
-    max-width: 100%;
-    max-height: 65vh;
-    overflow: hidden;
-    position: relative;
-}
 
 /* ------PRODUCTOS------------ */
 
@@ -92,7 +48,12 @@
 
 .anchoProd{
     width: 90%;
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
+
 .ventasUno{
     grid-area: uno;
     @extend .anchoProd;
@@ -266,13 +227,7 @@ main{
     font-size: xx-large;
     grid-area: parrafoT;
 }
-
-/* ----nosotros tablet----- */
-
-.nosotros{
-    font-size: 4vh;
 }
-
 /* ----productos tablet----- */
 
 .contenedorProductos{
@@ -293,8 +248,6 @@ main{
     justify-content: center;
 }
 
-
-}
 
 @media screen and (min-width: 1024px){
 

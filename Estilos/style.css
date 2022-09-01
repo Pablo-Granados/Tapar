@@ -29,10 +29,9 @@ body {
 
 main {
   width: 100%;
-  height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  min-height: 100vh;
 }
 main .inicio {
   width: 95%;
@@ -66,41 +65,22 @@ main .inicio .row .parrafoTapar .colorNatural {
   text-transform: uppercase;
 }
 
-/* ---------footer-------- */
 .redes {
   height: 10vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  vertical-align: bottom;
+  vertical-align: middle;
+  background-color: #198754;
+  margin-top: 1rem;
 }
 
 .redesSociales {
   display: flex;
-  align-self: flex-end;
+  align-self: center;
 }
 
-/* --------Contacto------------ */
-.continuar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.formulario {
-  color: whitesmoke;
-  margin: 1rem;
-}
-
-.terycon {
-  text-align: start;
-}
-
-.boton {
-  text-align: end;
-}
-
-/* -----NOSOTROS------- */
 .nosotros {
   color: whitesmoke;
   text-align: center;
@@ -110,6 +90,14 @@ main .inicio .row .parrafoTapar .colorNatural {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.conteinerNos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  gap: 1rem;
 }
 
 .videoTapar {
@@ -129,6 +117,41 @@ main .inicio .row .parrafoTapar .colorNatural {
   position: relative;
 }
 
+@media screen and (min-width: 600px) {
+  .nosotros {
+    font-size: 4vh;
+  }
+  .conteinerNos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos" "tres cuatro";
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .videoTapar {
+    margin-top: 2rem;
+  }
+}
+/* --------Contacto------------ */
+.continuar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formulario {
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+.terycon {
+  text-align: start;
+}
+
+.boton {
+  text-align: end;
+}
+
 /* ------PRODUCTOS------------ */
 .contenedorProductos {
   display: grid;
@@ -138,7 +161,7 @@ main .inicio .row .parrafoTapar .colorNatural {
   gap: 1rem;
 }
 
-.product {
+.product, .casas {
   width: 100vw;
   margin-top: 1rem;
   display: flex;
@@ -147,6 +170,10 @@ main .inicio .row .parrafoTapar .colorNatural {
 
 .anchoProd, .ventasCuatro, .ventasTres, .ventasDos, .ventasUno {
   width: 90%;
+  transition: transform 0.5s;
+}
+.anchoProd:hover, .ventasCuatro:hover, .ventasTres:hover, .ventasDos:hover, .ventasUno:hover {
+  transform: scale(1.1);
 }
 
 .ventasUno {
@@ -341,26 +368,24 @@ div h1 {
     font-size: xx-large;
     grid-area: parrafoT;
   }
-  /* ----nosotros tablet----- */
-  .nosotros {
-    font-size: 4vh;
-  }
-  /* ----productos tablet----- */
-  .contenedorProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "uno dos" "tres cuatro";
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  .product {
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-  }
 }
+/* ----productos tablet----- */
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "uno dos" "tres cuatro";
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product, .casas {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 1024px) {
   /* ------productos desktop------- */
   .contenedorProductos {
@@ -371,7 +396,7 @@ div h1 {
     gap: 1rem;
     margin-top: 2rem;
   }
-  .product {
+  .product, .casas {
     width: 100%;
     margin-top: 1rem;
     display: flex;
