@@ -65,6 +65,36 @@ main .inicio .row .parrafoTapar .colorNatural {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1024px) {
+  .carousel-inner {
+    height: 85vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .taparInicio {
+    margin: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .tituloTapar {
+    color: whitesmoke;
+    letter-spacing: 20px;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    grid-area: tituloT;
+  }
+  .parrafoTapar {
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: xx-large;
+    grid-area: parrafoT;
+  }
+}
 .redes {
   height: 10vh;
   text-align: center;
@@ -96,7 +126,7 @@ main .inicio .row .parrafoTapar .colorNatural {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete";
   gap: 1rem;
 }
 
@@ -108,6 +138,7 @@ main .inicio .row .parrafoTapar .colorNatural {
   max-width: auto;
   justify-content: center;
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 .videoTapar video {
@@ -125,7 +156,7 @@ main .inicio .row .parrafoTapar .colorNatural {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "uno dos" "tres cuatro";
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho";
     gap: 1rem;
     margin-top: 2rem;
   }
@@ -133,72 +164,16 @@ main .inicio .row .parrafoTapar .colorNatural {
     margin-top: 2rem;
   }
 }
-/* --------Contacto------------ */
-.continuar {
-  display: flex;
-  justify-content: flex-end;
+@media screen and (min-width: 1024px) {
+  .conteinerNos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho ocho";
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 }
-
-.formulario {
-  color: whitesmoke;
-  margin: 1rem;
-}
-
-.terycon {
-  text-align: start;
-}
-
-.boton {
-  text-align: end;
-}
-
-/* ------PRODUCTOS------------ */
-.contenedorProductos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "uno" "dos" "tres" "cuatro";
-  gap: 1rem;
-}
-
-.product, .casas {
-  width: 100vw;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.anchoProd, .ventasCuatro, .ventasTres, .ventasDos, .ventasUno {
-  width: 90%;
-  transition: transform 0.5s;
-}
-.anchoProd:hover, .ventasCuatro:hover, .ventasTres:hover, .ventasDos:hover, .ventasUno:hover {
-  transform: scale(1.1);
-}
-
-.ventasUno {
-  grid-area: uno;
-}
-
-.ventasDos {
-  grid-area: dos;
-}
-
-.ventasTres {
-  grid-area: tres;
-}
-
-.ventasCuatro {
-  grid-area: cuatro;
-}
-
-/* ------historia------ */
-div h1 {
-  color: whitesmoke;
-  width: 95vw;
-  text-align: center;
-}
-
 .Gusanito {
   background: #005232;
   border: 4px solid green;
@@ -340,52 +315,114 @@ div h1 {
     width: 40px;
   }
 }
-/* ----------tablet ------------------*/
-@media screen and (min-width: 600px) {
-  main {
-    height: 100%;
-  }
-  /* ------ inicio tablet */
-  .taparInicio {
-    margin: 2rem 1rem 2rem 1rem;
-    text-align: center;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .tituloTapar {
-    color: whitesmoke;
-    letter-spacing: 20px;
-    font-size: 100px;
-    font-weight: bolder;
-    text-align: center;
-    grid-area: tituloT;
-  }
-  .parrafoTapar {
-    color: whitesmoke;
-    font-weight: 300;
-    font-size: xx-large;
-    grid-area: parrafoT;
-  }
+.continuar {
+  display: flex;
+  justify-content: flex-end;
 }
-/* ----productos tablet----- */
+
+.formulario {
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+.terycon {
+  text-align: start;
+}
+
+.boton {
+  text-align: end;
+}
+
+.historia {
+  display: flex;
+  justify-content: center;
+}
+
+.htitulo {
+  margin-top: 1rem;
+  color: whitesmoke;
+  width: 95%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ------PRODUCTOS y NOSOTROS------------ */
 .contenedorProductos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "uno dos" "tres cuatro";
+  grid-template-areas: "uno" "dos" "tres" "cuatro";
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .product, .casas {
-  width: 100%;
+  width: 100vw;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 
+.anchoProd, .ventasOcho, .ventasSiete, .ventasSeis, .ventasCinco, .ventasCuatro, .ventasTres, .ventasDos, .ventasUno {
+  width: 90%;
+  transition: transform 0.5s;
+}
+.anchoProd:hover, .ventasOcho:hover, .ventasSiete:hover, .ventasSeis:hover, .ventasCinco:hover, .ventasCuatro:hover, .ventasTres:hover, .ventasDos:hover, .ventasUno:hover {
+  transform: scale(1.1);
+}
+
+.ventasUno {
+  grid-area: uno;
+}
+
+.ventasDos {
+  grid-area: dos;
+}
+
+.ventasTres {
+  grid-area: tres;
+}
+
+.ventasCuatro {
+  grid-area: cuatro;
+}
+
+.ventasCinco {
+  grid-area: cinco;
+}
+
+.ventasSeis {
+  grid-area: seis;
+}
+
+.ventasSiete {
+  grid-area: siete;
+}
+
+.ventasOcho {
+  grid-area: ocho;
+}
+
+/* ----------tablet ------------------*/
+@media screen and (min-width: 600px) {
+  main {
+    height: 100%;
+  }
+  /* ----productos tablet----- */
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos" "tres cuatro";
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .product, .casas {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   /* ------productos desktop------- */
   .contenedorProductos {

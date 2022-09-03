@@ -1,9 +1,7 @@
 main{
     width: 100%;
-    // height: 75vh;
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
     min-height: 100vh;
 
     .inicio{
@@ -42,5 +40,38 @@ main{
                 }
             }
         }
+    }
+}
+
+.carousel-inner{
+    @media screen and (min-width: 1024px){
+        height: 85vh;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .taparInicio{
+        margin: 2rem 1rem 2rem 1rem;
+        text-align: center;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .tituloTapar{
+        color: whitesmoke;
+        letter-spacing: 20px;
+        font-size: 100px;
+        font-weight: bolder;
+        text-align: center;
+        grid-area: tituloT;
+    }
+    
+    .parrafoTapar{
+        color: whitesmoke;
+        font-weight: 300;
+        font-size: xx-large;
+        grid-area: parrafoT;
     }
 }

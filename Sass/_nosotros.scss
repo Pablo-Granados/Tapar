@@ -17,7 +17,10 @@
     "uno"
     "dos"
     "tres"
-    "cuatro";
+    "cuatro"
+    "cinco"
+    "seis"
+    "siete";
     gap: 1rem;
 }
 
@@ -32,6 +35,7 @@
     max-width: auto;
     justify-content: center;
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .videoTapar video{
@@ -52,7 +56,9 @@
         grid-template-rows: auto;
         grid-template-areas: 
         "uno dos"
-        "tres cuatro";
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho";
         gap: 1rem;
         margin-top: 2rem;
     }
@@ -60,3 +66,17 @@
         margin-top: 2rem;
     }
     }
+
+@media screen and (min-width: 1024px){
+    .conteinerNos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "uno dos tres"
+        "cuatro cinco seis"
+        "siete ocho ocho";
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
