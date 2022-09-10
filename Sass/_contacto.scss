@@ -15,3 +15,32 @@
 .boton{
     text-align: end;
 }
+.Catalogo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contCatag{
+    display: flex;
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+        .pCatag{
+        color: whitesmoke;
+        text-align: center;
+        vertical-align: middle;
+        font-size: x-large;
+        margin-left: 2rem;
+        }
+        
+        .CatalogoImg{
+        width: 50%;
+        }
+    }
+}

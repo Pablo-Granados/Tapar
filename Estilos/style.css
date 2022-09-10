@@ -64,6 +64,30 @@ main .inicio .row .parrafoTapar .colorNatural {
   color: wheat;
   text-transform: uppercase;
 }
+main .tabla {
+  width: 95%;
+  align-self: center;
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main .detalle {
+  width: 95%;
+  margin-top: 5rem;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .detalle .h1Inicio {
+  text-transform: uppercase;
+}
+main .detalle .pInicio {
+  width: 50%;
+  margin-top: 2rem;
+}
 
 @media screen and (min-width: 1024px) {
   .carousel-inner {
@@ -103,7 +127,7 @@ main .inicio .row .parrafoTapar .colorNatural {
   align-items: center;
   vertical-align: middle;
   background-color: #198754;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .redesSociales {
@@ -332,6 +356,35 @@ main .inicio .row .parrafoTapar .colorNatural {
 
 .boton {
   text-align: end;
+}
+
+.Catalogo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contCatag {
+  display: flex;
+}
+.contCatag .catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contCatag .catalogo .pCatag {
+  color: whitesmoke;
+  text-align: center;
+  vertical-align: middle;
+  font-size: x-large;
+  margin-left: 2rem;
+}
+.contCatag .catalogo .CatalogoImg {
+  width: 50%;
 }
 
 .historia {
