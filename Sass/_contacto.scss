@@ -3,6 +3,10 @@
     justify-content: flex-end;
 }
 
+.row{
+    align-items: center;
+}
+
 .formulario{
     color: whitesmoke;
     margin: 1rem;
@@ -15,32 +19,27 @@
 .boton{
     text-align: end;
 }
-.Catalogo{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.contCatag{
-    display: flex;
-    .catalogo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        
-        .pCatag{
-        color: whitesmoke;
-        text-align: center;
-        vertical-align: middle;
-        font-size: x-large;
-        margin-left: 2rem;
-        }
-        
-        .CatalogoImg{
-        width: 50%;
-        }
+
+.pCatag{
+    margin: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    font-size: x-large;
     }
+
+.CatalogoImg{
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.CatalogoImg img{
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    align-self: center;
 }

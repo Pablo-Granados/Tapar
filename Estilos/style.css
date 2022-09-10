@@ -345,6 +345,10 @@ main .detalle .pInicio {
   justify-content: flex-end;
 }
 
+.row {
+  align-items: center;
+}
+
 .formulario {
   color: whitesmoke;
   margin: 1rem;
@@ -358,33 +362,28 @@ main .detalle .pInicio {
   text-align: end;
 }
 
-.Catalogo {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.pCatag {
+  margin: 1rem;
+  color: whitesmoke;
+  text-align: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size: x-large;
 }
 
-.contCatag {
+.CatalogoImg {
   display: flex;
-}
-.contCatag .catalogo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 70%;
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.contCatag .catalogo .pCatag {
-  color: whitesmoke;
-  text-align: center;
-  vertical-align: middle;
-  font-size: x-large;
-  margin-left: 2rem;
-}
-.contCatag .catalogo .CatalogoImg {
-  width: 50%;
+
+.CatalogoImg img {
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  align-self: center;
 }
 
 .historia {
