@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .conteinerNos{
@@ -20,7 +21,8 @@
     "cuatro"
     "cinco"
     "seis"
-    "siete";
+    "siete"
+    "ocho";
     gap: 1rem;
 }
 
@@ -31,7 +33,7 @@
     display: flex;
     align-items: center;
     height: 65vh;
-    width: 100vw;
+    width: 100%;
     max-width: auto;
     justify-content: center;
     margin-bottom: 0.5rem;

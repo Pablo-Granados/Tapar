@@ -120,13 +120,14 @@ main .inicio .row .parrafoTapar .colorNatural {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .conteinerNos {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete";
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho";
   gap: 1rem;
 }
 
@@ -134,7 +135,7 @@ main .inicio .row .parrafoTapar .colorNatural {
   display: flex;
   align-items: center;
   height: 65vh;
-  width: 100vw;
+  width: 100%;
   max-width: auto;
   justify-content: center;
   margin-bottom: 0.5rem;
@@ -356,7 +357,7 @@ main .inicio .row .parrafoTapar .colorNatural {
 }
 
 .product, .casas {
-  width: 100vw;
+  width: 100%;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
