@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #252525;
+  background-color: #212529;
 }
 
 .navbar-brand {
@@ -24,7 +24,7 @@ body {
 }
 .anim:hover {
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #252525;
+  color: #212529 !important;
 }
 
 main {
@@ -73,7 +73,7 @@ main .tabla {
   justify-content: center;
 }
 main .detalle {
-  width: 95%;
+  width: 100%;
   margin-top: 5rem;
   color: whitesmoke;
   text-align: center;
@@ -83,10 +83,15 @@ main .detalle {
 }
 main .detalle .h1Inicio {
   text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 main .detalle .pInicio {
-  width: 50%;
+  width: 70%;
   margin-top: 2rem;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -381,9 +386,12 @@ main .detalle .pInicio {
 
 .CatalogoImg img {
   width: 90%;
-  height: 85vh;
-  display: flex;
   align-self: center;
+}
+@media screen and (min-width: 1024px) {
+  .CatalogoImg img {
+    height: 85vh;
+  }
 }
 
 .historia {

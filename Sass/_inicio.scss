@@ -50,7 +50,7 @@ main{
         justify-content: center;
     }
     .detalle{
-        width: 95%;
+        width: 100%;
         margin-top: 5rem;
         color: whitesmoke;
         text-align: center;
@@ -60,10 +60,15 @@ main{
 
         .h1Inicio{
             text-transform: uppercase;
+            font-size: 3em;
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
         .pInicio{
-            width: 50%;
+            width: 70%;
             margin-top: 2rem;
+            font-size: 1.5em;
         }
         
     }

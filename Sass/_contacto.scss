@@ -39,7 +39,9 @@
 
 .CatalogoImg img{
     width: 90%;
-    height: 85vh;
-    display: flex;
     align-self: center;
+    @media screen and (min-width: 1024px){
+        height: 85vh;;
+        
+    }
 }
