@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -34,13 +35,15 @@ main {
   min-height: 100vh;
 }
 main .inicio {
-  width: 95%;
-  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 main .inicio .row {
   margin-top: 2rem;
   text-align: center;
-  align-items: center;
+  display: flex;
+  width: 95%;
 }
 main .inicio .row .parrafoTapar {
   margin-bottom: 2rem;
@@ -352,6 +355,7 @@ main .detalle .pInicio {
 
 .row {
   align-items: center;
+  width: 100%;
 }
 
 .formulario {
@@ -400,13 +404,86 @@ main .detalle .pInicio {
 }
 
 .htitulo {
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: whitesmoke;
   width: 95%;
   text-align: center;
+  font-family: "Inconsolata", monospace;
   text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 3rem;
 }
 
+.conteinerLDT {
+  color: whitesmoke;
+  margin: 1rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.ldt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hinfo {
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 1rem;
+}
+
+.informacion {
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
+  color: #212529;
+  background-color: whitesmoke;
+  font-size: large;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 766px) {
+  .conteinerLDT {
+    color: whitesmoke;
+    margin: 1rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  .ldt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .derecha {
+    width: 50%;
+    display: flex;
+    align-self: flex-end;
+  }
+  .izquierda {
+    width: 50%;
+    display: flex;
+    align-self: flex-start;
+  }
+  .hinfo {
+    text-align: center;
+  }
+  .informacion {
+    padding: 1rem;
+    margin: 1rem;
+    width: 90%;
+    color: #212529;
+    background-color: whitesmoke;
+  }
+}
 /* ------PRODUCTOS y NOSOTROS------------ */
 .contenedorProductos {
   display: grid;

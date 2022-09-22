@@ -5,13 +5,16 @@ main{
     min-height: 100vh;
 
     .inicio{
-        width: 95%;
-        align-self: center;
-
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
         .row{
             margin-top: 2rem;
             text-align: center;
-            align-items: center;
+            display: flex;
+            width: 95%;
+
 
             .parrafoTapar{
                 margin-bottom: 2rem;
